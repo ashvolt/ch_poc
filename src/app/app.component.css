@@ -1,0 +1,157 @@
+.content{
+  font-size:14px;
+  margin:20px
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+}
+.tile {
+  display: flex;
+  flex-direction: column;
+}
+.tile-item{
+  margin-bottom: 15px
+}
+.tile-item > div:nth-child(2){
+  font-weight: 600;
+}
+.tile-item > div:first-child {
+  font-weight: lighter;
+  color:#0A3C86;
+  margin-bottom: 5px;
+}
+h3 {
+  color:#0A3C86;
+}
+.header-bar{
+  background-color: #284C8A;
+  height: 30px;
+  border-bottom: 5px solid #FF3334;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #D4D4D4;
+
+}
+
+td, th {
+  padding: 10px;
+}
+th {
+  text-align: center
+}
+td:nth-child(even){
+  text-align: right;
+}
+tr:nth-child(even) {
+  background-color: #D4D4D4;
+}
+tr:first-child , tr:last-child {
+  color:#0A3C86
+}
+tr:last-child {
+  background-color: white;
+}
+tr:last-child > td{
+  font-weight: bold
+}
+tr:last-child > td:first-child{
+  font-weight: normal
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #343434;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #343434;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.other {
+  display: flex;
+  align-items: center;
+  }
+/* Create a custom checkbox */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #0A3C86;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.termsAndConditions {
+  margin: 25px 0px
+}
+
+.pay-button {
+  border:none;
+  padding: 10px 5px;
+  color:white;
+  background-color: #0A3C86;
+  border-radius: 5px;
+  width: 100%;
+}

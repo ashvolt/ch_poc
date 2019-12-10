@@ -1,0 +1,85 @@
+<div class="header-bar">
+
+</div>
+<div class="content">
+	<div class="company-logo">
+	</div>
+	<div class="cutomerDetails">
+		<h3>Customer Details</h3>
+		<div class="block">
+			<div class="tile">
+				<div class="tile-item">
+					<div> Agreement Number </div>
+					<div>123456789</div>
+				</div>
+				<div class="tile-item">
+					<div>Customer Name</div>
+					<div>Lorem Ipsum Lorem Ipsum</div>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-item">
+					<div>CIF ID</div>
+					<div>123456789</div>
+				</div>
+				<div class="tile-item">
+					<div>Mobile Number</div>
+					<div>123456789</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="payment-details">
+		<h3>Payment Details</h3>
+		<table>
+			<tr>
+				<th>Split up type</th>
+				<th>Amount (₹)</th>
+			</tr>
+			<tr>
+				<td>EMI OD</td>
+				<td>89,65,742.00</td>
+			</tr>
+			<tr>
+				<td>AFC</td>
+				<td>25,588.00</td>
+			</tr>
+			<tr>
+				<td>CBC</td>
+				<td>44,89,657.00</td>
+			</tr>
+			<tr>
+				<td>FVC</td>
+				<td>5,125.00</td>
+			</tr>
+			<tr>
+				<td class="other"><span>Other Charges</span> <span (click)="show = !show"
+         [ngClass]="show?'arrow-up':'arrow-down'"></span></td>
+				<td>7,89,654.00</td>
+			</tr>
+			<ng-container *ngIf="show">
+				<tr>
+					<td>xxxx</td>
+					<td>7,89,654.00</td>
+				</tr>
+			</ng-container>
+			<tr>
+				<td>Total</td>
+				<td>1,42,75,766‬.00</td>
+			</tr>
+		</table>
+		<div class="termsAndConditions">
+			<label class="container">Terms and Conditions
+        <input type="checkbox"  value="T&C">
+        <span class="checkmark"></span>
+      </label>
+			<label class="container">Payment receipt Terms and Conditions
+        <input type="checkbox"  value="PaymentT&C">
+        <span class="checkmark"></span>
+      </label>
+		</div>
+	</div>
+  <button class="pay-button">
+    Pay &nbsp;<span>₹1,42,75,766‬.00</span>
+  </button>
+</div>
