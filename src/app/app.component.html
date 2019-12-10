@@ -69,17 +69,21 @@
 			</tr>
 		</table>
 		<div class="termsAndConditions">
-			<label class="container">Terms and Conditions
-        <input type="checkbox"  value="T&C">
+			<label class="container" 
+      (change)="termsAndCondtions = !termsAndCondtions">Terms and Conditions
+        <input type="checkbox" 
+        [checked]="termsAndCondtions" value="T&C">
         <span class="checkmark"></span>
       </label>
-			<label class="container">Payment receipt Terms and Conditions
-        <input type="checkbox"  value="PaymentT&C">
+			<label class="container" 
+      (change)="paymentTermsAndConditions = !paymentTermsAndConditions">Payment receipt Terms and Conditions
+        <input type="checkbox" 
+        [checked]="paymentTermsAndConditions" value="PaymentT&C">
         <span class="checkmark"></span>
       </label>
 		</div>
 	</div>
-  <button class="pay-button">
+  <button [disabled]="!(termsAndCondtions && paymentTermsAndConditions)" class="pay-button">
     Pay &nbsp;<span>₹1,42,75,766‬.00</span>
   </button>
 </div>

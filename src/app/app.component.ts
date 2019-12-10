@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   name = 'Angular';
   show:boolean = false;
+  termsAndCondtions:boolean = false;
+  paymentTermsAndConditions:boolean = false;
 }
